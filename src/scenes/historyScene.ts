@@ -73,7 +73,7 @@ export class historyScene extends Scene {
         //Adicionar imagem do Actor
         logoVertical.graphics.add(imagemLogoVertical)
 
-        //Rederizar actor na tela/cena
+        //Rederizar actor na tela/cena'
         this.add(logoVertical)
 
         //Configurar a cena para monitorar o evento de tecla pressionada
