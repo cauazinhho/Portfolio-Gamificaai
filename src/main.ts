@@ -9,7 +9,9 @@ import { expoScene } from "./scenes/expoScene";
 const game = new Engine({
   width: 1200,
   height: 800,
-  canvasElementId: "jogo"
+  canvasElementId: "jogo",
+  //Otimizando para pixelArt
+  pixelArt: true
 })
 
 //Para adicionar cada cena no game
