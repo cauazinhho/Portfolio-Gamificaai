@@ -53,7 +53,7 @@
 </data>
  </layer>
  <objectgroup id="10" name="Personagens">
-  <object id="27" name="player_spawn" x="465.333" y="493.333">
+  <object id="27" name="player_spawn" x="463.021" y="516.771">
    <point/>
   </object>
  </objectgroup>
@@ -161,7 +161,7 @@
   <object id="9" name="mesa_stand_a" x="202.074" y="240.094" width="75.9886" height="41.8125"/>
   <object id="10" name="mesa_stand_c" x="650.142" y="239.912" width="75.9886" height="41.8125"/>
   <object id="11" name="hack_c" x="608.153" y="231.909" width="31.8182" height="44.1818"/>
-  <object id="13" name="fliperama" x="801.636" y="287.727" width="28.3636" height="62.0909"/>
+  <object id="13" name="fliperama" x="801.636" y="288.818" width="28.3636" height="61"/>
   <object id="14" name="vaso_planta_b" x="789.875" y="151.932" width="20.5568" height="22.0682"/>
   <object id="16" name="vaso_planta_a" x="117.551" y="151.261" width="20.5795" height="22.7273"/>
   <object id="17" name="estante_livro" x="99.75" y="165.5" width="19.5" height="119"/>
@@ -174,7 +174,7 @@
   <object id="28" name="npc_a" x="238.625" y="221.375">
    <point/>
   </object>
-  <object id="30" name="noc_b" x="462" y="223.667">
+  <object id="30" name="npc_b" x="463.25" y="220.667">
    <point/>
   </object>
   <object id="31" name="npc_c" x="688.667" y="221.667">
