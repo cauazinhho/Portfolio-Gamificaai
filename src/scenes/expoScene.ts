@@ -14,7 +14,7 @@ export class expoScene extends Scene {
 
     onInitialize(engine: Engine<any>): void {
         // Ativar o modo de Debug
-        engine.toggleDebug
+        engine.toggleDebug()
 
         // Para carregar o mapa
         let tiledMap = Resources.Mapa
