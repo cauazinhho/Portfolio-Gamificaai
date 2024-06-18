@@ -15,7 +15,7 @@ export class Player extends Actor {
         super({
             pos: posicao,
             width: 35,
-            height: 42,
+            height: 32,
             name: "Jogador",
             color: Color.Cyan,
             collisionType: CollisionType.Active
@@ -278,6 +278,42 @@ export class Player extends Actor {
                 this.graphics.use(this.ultimaDirecao + "-idle")
                 this.graphics.current!.scale = vec(1, 1)
                 
+            }
+        })
+
+        // Configurar o player para monitorar evento pressionando f ou e
+        engine.input.keyboard.on("press", (event) => {
+            if (event.key == Keys.F || event.key == Keys.E && this.temObjetoProximo) {
+                
+                // Identificar o alvo da interação
+                if (this.ultimoColisor?.owner.name == "mesa_stand_a") {
+                    // Vai para a cena passando qual o objeto da interação
+                    engine.goToScene("case", {
+                        sceneActivationData: {
+                            nomeDoActor: this.ultimoColisor?.owner.name  
+                        }
+                    })
+                }
+
+                if (this.ultimoColisor?.owner.name == "mesa_stand_b") {
+                      // Vai para a cena passando qual o objeto da interação
+                      engine.goToScene("case", {
+                        sceneActivationData: {
+                            nomeDoActor: this.ultimoColisor?.owner.name  
+                        }
+                    })
+                }
+
+                if (this.ultimoColisor?.owner.name == "mesa_stand_c ") {
+                      // Vai para a cena passando qual o objeto da interação
+                      engine.goToScene("case", {
+                        sceneActivationData: {
+                            nomeDoActor: this.ultimoColisor?.owner.name  
+                        }
+                    })
+                }
+
+
             }
         })
     }

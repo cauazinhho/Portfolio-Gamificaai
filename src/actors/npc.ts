@@ -1,7 +1,8 @@
 import { Actor, CollisionType, Color, Vector } from "excalibur";
 
+
 export class Npc extends Actor {
-    constructor(posicao: Vector, cor: Color, nome: string){
+    constructor(posicao: Vector, cor: Color, nome: string) {
         super({
             pos: posicao,
             width: 32,
@@ -11,4 +12,8 @@ export class Npc extends Actor {
             collisionType: CollisionType.Fixed
         })
     }
+
+    
+    
+    
 }

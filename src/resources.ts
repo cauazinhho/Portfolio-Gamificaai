@@ -1,10 +1,15 @@
-import { ImageFiltering, ImageSource, Loader } from "excalibur";
+import { ImageFiltering, ImageSource, Loader, Sound } from "excalibur";
 import { TiledResource } from "@excaliburjs/plugin-tiled";
 
 import sword from "./images/sword.png";
 import logo from "./images/logo.png";
 import logoVertical from "./images/logo-vertical.png";
 import furia from "./images/furia.png"
+import tec from "./images/tec.png"
+
+import ritmada from "./sounds/ritmada_zelda.mp3"
+import zelda from "./sounds/zelda.mp3"
+import prince from "./sounds/freshprince.mp3"
 
 import pngTilesetPath from "./maps/Room_Builder_32x32.png?url"
 
@@ -15,10 +20,20 @@ import tsxBibliotecaPath from "./maps/tileset_biblioteca.tsx?url"
 
 import tmxMapaPath from "./maps/showroom_map.tmx?url"
 
+// import do Player
 import playerSpritePath from "./sprites/player.png"
+import npcSpritePath from "./sprites/npc.png"
+
 
 export const Resources = {
+
+RitmadaBGM: new Sound(ritmada),
+ZeldaBGM: new Sound(zelda),
+FreshPrinceBGM: new Sound(prince),
+
+  Tec: new ImageSource(tec),
   PlayerSpriteSheet: new ImageSource(playerSpritePath, {filtering: ImageFiltering.Pixel}),
+  NpcSpriteSheet: new ImageSource(npcSpritePath, {filtering: ImageFiltering.Pixel}),
   Sword: new ImageSource(sword),
   Logo: new ImageSource(logo),
   LogoVertical: new ImageSource(logoVertical),
