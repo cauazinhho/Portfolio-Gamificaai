@@ -7,6 +7,11 @@ import logoVertical from "./images/logo-vertical.png";
 import furia from "./images/furia.png"
 import tec from "./images/tec.png"
 
+import img1 from "./images/img1.jpg"
+import atendente from "./images/atendente c.jpg"
+import img3 from "./images/img.3.jpg"
+
+
 import ritmada from "./sounds/ritmada_zelda.mp3"
 import zelda from "./sounds/zelda.mp3"
 import prince from "./sounds/freshprince.mp3"
@@ -25,11 +30,17 @@ import playerSpritePath from "./sprites/player.png"
 import npcSpritePath from "./sprites/npc.png"
 
 
+
+
 export const Resources = {
 
 RitmadaBGM: new Sound(ritmada),
 ZeldaBGM: new Sound(zelda),
 FreshPrinceBGM: new Sound(prince),
+
+Img1: new ImageSource(img1),
+Atendente: new ImageSource(atendente),
+Img3: new ImageSource(img3),
 
   Tec: new ImageSource(tec),
   PlayerSpriteSheet: new ImageSource(playerSpritePath, {filtering: ImageFiltering.Pixel}),

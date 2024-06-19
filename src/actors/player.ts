@@ -39,6 +39,7 @@ export class Player extends Actor {
                 }
             }
         })
+        
 
         // Criando as animações do player
         const duracaoFrameAnimacao = 70
@@ -283,7 +284,7 @@ export class Player extends Actor {
 
         // Configurar o player para monitorar evento pressionando f ou e
         engine.input.keyboard.on("press", (event) => {
-            if (event.key == Keys.F || event.key == Keys.E && this.temObjetoProximo) {
+            if (event.key == Keys.E && this.temObjetoProximo) {
                 
                 // Identificar o alvo da interação
                 if (this.ultimoColisor?.owner.name == "mesa_stand_a") {
@@ -304,7 +305,7 @@ export class Player extends Actor {
                     })
                 }
 
-                if (this.ultimoColisor?.owner.name == "mesa_stand_c ") {
+                if (this.ultimoColisor?.owner.name == "mesa_stand_c") {
                       // Vai para a cena passando qual o objeto da interação
                       engine.goToScene("case", {
                         sceneActivationData: {
