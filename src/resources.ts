@@ -27,7 +27,9 @@ import tmxMapaPath from "./maps/showroom_map.tmx?url"
 
 // import do Player
 import playerSpritePath from "./sprites/player.png"
-import npcSpritePath from "./sprites/npc.png"
+import npcASpritePath from "./sprites/npc.png"
+import npcBSpritePath from "./sprites/npc2.png"
+import npcCSpritePath from "./sprites/npc3.png"
 
 
 
@@ -44,7 +46,11 @@ Img3: new ImageSource(img3),
 
   Tec: new ImageSource(tec),
   PlayerSpriteSheet: new ImageSource(playerSpritePath, {filtering: ImageFiltering.Pixel}),
-  NpcSpriteSheet: new ImageSource(npcSpritePath, {filtering: ImageFiltering.Pixel}),
+
+  NpcASpriteSheet: new ImageSource(npcASpritePath, {filtering: ImageFiltering.Pixel}),
+  NpcBSpriteSheet: new ImageSource(npcBSpritePath, {filtering: ImageFiltering.Pixel}),
+  NpcCSpriteSheet: new ImageSource(npcCSpritePath, {filtering: ImageFiltering.Pixel}),
+
   Sword: new ImageSource(sword),
   Logo: new ImageSource(logo),
   LogoVertical: new ImageSource(logoVertical),

@@ -171,13 +171,13 @@
   <object id="22" name="livros_b" x="740.104" y="67.6875" width="23.875" height="78.125"/>
   <object id="24" name="cadeira" x="152.636" y="372.477" width="33.4545" height="39.4318"/>
   <object id="26" name="hack_tv" x="99.75" y="351.875" width="20" height="55.875"/>
-  <object id="28" name="npc_a" x="238.625" y="221.375">
+  <object id="28" name="npc_a" x="238.989" y="214.92">
    <point/>
   </object>
-  <object id="30" name="npc_b" x="463.25" y="220.667">
+  <object id="30" name="npc_b" x="462.859" y="215.537">
    <point/>
   </object>
-  <object id="31" name="npc_c" x="688.667" y="221.667">
+  <object id="31" name="npc_c" x="686.884" y="215.841">
    <point/>
   </object>
  </objectgroup>
